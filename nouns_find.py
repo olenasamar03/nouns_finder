@@ -23,31 +23,6 @@ def extract_nouns_from_file(file):
 
     return nouns_result, output_file
 
-custom_css = """
-body {
-    background-color: white;
-    color: #ff66b2;
-}
-.gr-button {
-    background-color: white;
-    color: black;
-    border: 2px solid #ff99c8;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 8px 16px;
-}
-.gr-button:hover {
-    background-color: #ff99c8;
-    color: white;
-}
-.gr-textbox, .gr-file {
-    border: 2px solid #ff99c8;
-    border-radius: 8px;
-    padding: 8px;
-    font-size: 16px;
-    color: black;
-}
-"""
 
 with gr.Blocks(css=custom_css) as interface:
     gr.Markdown(
